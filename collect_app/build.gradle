@@ -76,7 +76,7 @@ android {
     }
 
     defaultConfig {
-        applicationId('org.koboc.collect.android')
+        applicationId('io.catalpa.collect.android')
         minSdkVersion Versions.android_min_sdk
         targetSdkVersion Versions.android_target_sdk
         versionCode 4136
