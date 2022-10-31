@@ -30,9 +30,7 @@
                 android:name="org.odk.collect.android.fragments.MapBoxInitializationFragment"
                 android:id="@+id/map_box_initialization_fragment"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:name="org.odk.collect.android.preferences.screens.MapsPreferencesFragment"
-                tools:layout="@layout/selection_map_layout" />
+                android:layout_height="1dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
