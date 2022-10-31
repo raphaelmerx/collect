@@ -1,7 +1,6 @@
 package org.odk.collect.android.preferences
 
 import com.google.android.gms.maps.GoogleMap
-import com.mapbox.mapboxsdk.maps.Style
 import org.odk.collect.android.R
 import org.odk.collect.android.application.Collect
 import org.odk.collect.android.utilities.QuestionFontSizeUtils
@@ -15,11 +14,11 @@ object Defaults {
         get() {
             val hashMap = HashMap<String, Any>()
             // odk_server_preferences.xml
-            hashMap[ProjectKeys.KEY_SERVER_URL] = "https://kc.kobotoolbox.org/kobodemouser"
+            hashMap[ProjectKeys.KEY_SERVER_URL] = "https://kc.mssi-anual.temp.build"
             hashMap[ProjectKeys.KEY_USERNAME] = ""
             hashMap[ProjectKeys.KEY_PASSWORD] = ""
             // form_management_preferences.xml
-            hashMap[ProjectKeys.KEY_AUTOSEND] = "off"
+            hashMap[ProjectKeys.KEY_AUTOSEND] = "wifi_and_cellular"
             hashMap[ProjectKeys.KEY_GUIDANCE_HINT] = "no"
             hashMap[ProjectKeys.KEY_DELETE_AFTER_SEND] = false
             hashMap[ProjectKeys.KEY_COMPLETED_DEFAULT] = true
@@ -57,7 +56,7 @@ object Defaults {
             hashMap[ProjectKeys.KEY_CARTO_MAP_STYLE] = "positron"
             hashMap[ProjectKeys.KEY_USGS_MAP_STYLE] = "topographic"
             hashMap[ProjectKeys.KEY_GOOGLE_MAP_STYLE] = GoogleMap.MAP_TYPE_NORMAL.toString()
-            hashMap[ProjectKeys.KEY_MAPBOX_MAP_STYLE] = Style.MAPBOX_STREETS
+            hashMap[ProjectKeys.KEY_MAPBOX_MAP_STYLE] = "mapbox://styles/mapbox/streets-v11"
             return hashMap
         }
 
