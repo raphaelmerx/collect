@@ -1119,9 +1119,9 @@
     <!-- Tag line displayed on the first launch screen. The text should be split into two lines with \n. Please
     select the wording and where to put the \n for maximum impact in your language. -->
     <string name="tagline">Collect data\nanywhere</string>
-    <string name="mssi_subsidiu">MSSI Subsidiu Fim do Ano</string>
+    <string name="subsidiu_fim_do_ano">Subsídiu Fim do Ano</string>
     <!-- Text for the button that allows a direct login to the default server. Should be short -->
-    <string name="preconfigured_login">Login to MSSI</string>
+    <string name="preconfigured_login">Login to Kobo</string>
     <!-- Text for the button that allows for configuring a project by scanning a QR code. Should be short -->
     <string name="configure_with_qr_code">Configure with QR code</string>
     <!-- Text for the button that allows for manually entering project details. Should be short -->

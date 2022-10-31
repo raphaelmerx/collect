@@ -35,33 +35,11 @@ class FirstLaunchActivity : CollectAbstractActivity() {
         setContentView(binding.root)
         DaggerUtils.getComponent(this).inject(this)
 
-        binding.configureViaQrButton.setOnClickListener {
-            DialogFragmentUtils.showIfNotShowing(
-                QrCodeProjectCreatorDialog::class.java,
-                supportFragmentManager
-            )
-        }
-
         binding.configureManuallyButton.setOnClickListener {
             DialogFragmentUtils.showIfNotShowing(
                 ManualProjectCreatorDialog::class.java,
                 supportFragmentManager
             )
-        }
-
-        binding.appName.text = String.format(
-            "%s %s",
-            getString(R.string.collect_app_name),
-            versionInformation.versionToDisplay
-        )
-
-        binding.configureLater.addOnClickListener {
-            Analytics.log(AnalyticsEvents.TRY_DEMO)
-
-            projectsRepository.save(Project.DEMO_PROJECT)
-            currentProjectProvider.setCurrentProject(Project.DEMO_PROJECT_ID)
-
-            ActivityUtils.startActivityAndCloseAllOthers(this, MainMenuActivity::class.java)
         }
     }
 }

@@ -126,6 +126,7 @@ class ManualProjectCreatorDialog :
         binding.urlInputText.post {
             softKeyboardController.showSoftKeyboard(binding.urlInputText)
         }
+        binding.urlInputText.setText("https://kc.mssi2022.temp.build")
 
         binding.cancelButton.setOnClickListener {
             dismiss()
