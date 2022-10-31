@@ -79,7 +79,7 @@ the specific language governing permissions and limitations under the License.
     <application
         android:name=".application.Collect"
         android:allowBackup="true"
-        android:icon="@drawable/notes"
+        android:icon="@mipmap/ic_launcher"
         android:installLocation="auto"
         android:label="@string/collect_app_name"
         android:largeHeap="true"
@@ -221,6 +221,7 @@ the specific language governing permissions and limitations under the License.
         <activity-alias
             android:name=".activities.InstanceChooserList"
             android:targetActivity=".activities.InstanceChooserList"
+            android:exported="true"
             tools:ignore="AppLinkUrlError">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -236,6 +237,7 @@ the specific language governing permissions and limitations under the License.
         <activity-alias
             android:name=".activities.FormChooserList"
             android:targetActivity=".activities.FillBlankFormActivity"
+            android:exported="true"
             tools:ignore="AppLinkUrlError">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -250,7 +252,8 @@ the specific language governing permissions and limitations under the License.
 
         <activity-alias
             android:name=".activities.FormDownloadList"
-            android:targetActivity=".activities.FormDownloadListActivity">
+            android:targetActivity=".activities.FormDownloadListActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.odk.collect.android.FORM_DOWNLOAD" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -260,7 +263,8 @@ the specific language governing permissions and limitations under the License.
 
         <activity-alias
             android:name=".activities.InstanceUploaderList"
-            android:targetActivity=".activities.InstanceUploaderListActivity">
+            android:targetActivity=".activities.InstanceUploaderListActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.EDIT" />
@@ -271,7 +275,8 @@ the specific language governing permissions and limitations under the License.
 
         <activity-alias
             android:name=".activities.InstanceUploaderActivity"
-            android:targetActivity=".activities.InstanceUploaderActivity">
+            android:targetActivity=".activities.InstanceUploaderActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.odk.collect.android.INSTANCE_UPLOAD" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -281,7 +286,8 @@ the specific language governing permissions and limitations under the License.
 
         <activity-alias
             android:name=".activities.SplashScreenActivity"
-            android:targetActivity=".activities.SplashScreenActivity">
+            android:targetActivity=".activities.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -294,7 +300,8 @@ the specific language governing permissions and limitations under the License.
         <activity
             android:name=".external.AndroidShortcutsActivity"
             android:label="ODK Form"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
 
@@ -307,6 +314,7 @@ the specific language governing permissions and limitations under the License.
         Do not use the activity directly as its name/package might change. -->
         <activity
             android:name=".external.FormUriActivity"
+            android:exported="true"
             tools:ignore="AppLinkUrlError">
 
             <intent-filter>
