@@ -31,7 +31,7 @@ object Defaults {
             hashMap[ProjectKeys.KEY_HIDE_OLD_FORM_VERSIONS] = true
             hashMap[ProjectKeys.KEY_BACKGROUND_LOCATION] = true
             hashMap[ProjectKeys.KEY_BACKGROUND_RECORDING] = true
-            hashMap[ProjectKeys.KEY_FORM_UPDATE_MODE] = "manual"
+            hashMap[ProjectKeys.KEY_FORM_UPDATE_MODE] = "match_exactly"
             // form_metadata_preferences.xml
             hashMap[ProjectKeys.KEY_METADATA_USERNAME] = ""
             hashMap[ProjectKeys.KEY_METADATA_PHONENUMBER] = ""
